@@ -25,7 +25,7 @@ apples[1].model = 'm1';
 console.log(macbooks) // ['macbook2015', { model: 'm1' }, 'macbook2017']
 console.log(apples) // ['air', { model: 'm1' }, 'macbook2017']
 apples[0] = 'air' : air là string(kiểu dữ liệu nguyên thủy), khi được gán giá trị sẽ được gắn chặt với biến, biến mới tách biệt hoàn toàn so với biến cũ.
-apples[1].model = 'm1' : là Object(kiểu dữ liệu hỗn hợp), mặc dù có sử dụng const apples = [...macbooks] là Spread operator (Toán tử 3 chấm) dùng để deep copy một Object mà không làm thay đổi biến ban đầu nhưng đây là trường hợp Object lồng nhau vậy nên nó làm thay đổi cả biến ban đầu và biến mới. Trường hợp này ta giải quyết bằng cách sử dụng JSON.parse(JSON.stringify(macbooks)) thay vì dùng Spread operator.
+apples[1].model = 'm1' : là Object(kiểu dữ liệu hỗn hợp), mặc dù có sử dụng const apples = [...macbooks] là Spread operator (Toán tử 3 chấm) dùng để deep copy một Object mà không làm thay đổi biến ban đầu nhưng đây là trường hợp Object lồng nhau vậy nên nó làm thay đổi cả biến ban đầu và biến mới. Trường hợp này ta giải quyết bằng cách sử dụng JSON.parse(JSON.stringify(macbooks)) thay vì dùng Spread operator
 
 
 
